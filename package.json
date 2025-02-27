@@ -2,11 +2,13 @@
   "name": "maotao",
   "type": "module",
   "version": "0.0.1",
+  "packageManager": "pnpm@10.5.2",
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "preview:cloudflare": "wrangler pages dev ./dist"
   },
   "dependencies": {
     "@astrojs/mdx": "^4.0.3",
@@ -19,6 +21,7 @@
   },
   "devDependencies": {
     "prettier": "^3.4.2",
-    "prettier-plugin-astro": "^0.14.1"
+    "prettier-plugin-astro": "^0.14.1",
+    "wrangler": "^3.110.0"
   }
 }
